@@ -1,0 +1,14 @@
+.heading{
+    box-shadow: 10px 10px 10px red;
+    font-size: 25px;
+    margin: 0;
+}
+
+.copy_right_footer{
+    position: fixed;
+    bottom: 0;
+    background-color: blue;
+    color: red;
+    text-align: center;
+    width: 100%;
+}
