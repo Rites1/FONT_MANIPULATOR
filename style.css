@@ -12,3 +12,12 @@
     text-align: center;
     width: 100%;
 }
+
+canvas{
+    border: 5px solid red;
+    border-radius: 25px;
+}
+
+.note{
+    font-size: 20px;
+}
