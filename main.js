@@ -1,3 +1,7 @@
+left_wrist_x = 0;
+right_wrist_x = 0;
+difference = 0;
+
 function setup(){
     video = createCapture(VIDEO);
     video.size(550, 550);
@@ -14,5 +18,16 @@ function modelloaded(){
 function gotposes(results){
     if(results.length>0){
         console.log(results);
+        left_wrist_x = results[0].pose.leftWrist.x;
+        right_wrist_x = results[0].pose.rightWrist.x;
+        difference = floor(left_wrist_x - right_wrist_x);
     }
+}
+
+function draw(){
+    background("blue");
+    textSize(difference);
+    fill("red");
+    text("hello", 50, 400);
+    document.getElementById("font_size").innerHTML = "font size of text = "+ difference + "px";
 }

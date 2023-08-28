@@ -21,3 +21,9 @@ canvas{
 .note{
     font-size: 20px;
 }
+
+#font_size{
+    background-color: grey;
+    color: gold;
+    font-size: 20px;
+}
